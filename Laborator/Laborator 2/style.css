@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://i.pinimg.com/736x/c4/fe/2c/c4fe2cf300e5f9fb84eab5636dba05c1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    border-width: 2px;
+    border-style: solid;
+    border-color: purple;
+    padding: 20px; 
+    margin: 20px;
+}
+
+header {
+    font-size: 20px;
+}
+
+main, footer {
+    font-size: 15px;
+}
+
+h2, h3, h4 {
+
+    background-color: purple;
+    
+}
+
+nav#navigation > ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100vh;
+}
+
+nav#navigation > ul > li {
+    display: inline-block;
+    padding: 14px;
+    border-right: 3px solid white;
+}
+
+nav#navigation > ul > li > a {
+    color: rgb(204, 153, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav#navigation > ul > li:hover {
+    background-image: url('https://img.freepik.com/free-vector/realistic-colorful-galaxy-background_23-2148965681.jpg');
+}
+
+nav#navigation > ul > li:hover > a {
+    color: magenta;
+}
