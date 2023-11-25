@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Goddess</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ale">
+        <meta name="content" content="Beauty Blog">
+        <meta name="keywords" content="beauty,zeita,goddess,blog">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./form.css">
+        <link rel="icon" href="https://github.com/AlexandraMarinaBerlinschi/HTML-CSS-JAVASCRIPT/blob/main/GODDESS/Pagina%20Principala/Resources/Logo.png?raw=true">
+    </head>
+    <body>
+        <header>
+            <a href="./main.html"><h1>GODDESS</h1></a>
+
+            <div class="meniu">
+                <div class="login">
+                    <form action="./login.html" method="get">
+                    <button class="login_btn">Log in</button>
+                    </form>
+                </div>
+                <div class="dropdown">
+                    <form action="./sugestii.html" method="get">
+                    <button id="meniu">Sugestii</button>
+                        <div class="dropdown-optiuni">
+                            <a href="./trusa_machiaj.html">Trusa de machiaj</a>
+                            <a href="./nuanta_fdt.html">Nuanta fondului de ten</a>
+                            <a href="./greseli_par.html">Greseli in ingrijirea parului</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <form action="./skincare.html" method="get">
+                    <button id="meniu">Skincare</button>
+                        <div class="dropdown-optiuni">
+                            <a href="./lamaia_pe_ten.html">Lamaia pe ten</a>
+                            <a href="./spf_zilnic.html">Spf zilnic</a>
+                            <a href="./supraexfolierea.html">Supraexfolierea</a>
+                            <a href="./hidratarea.html">Hidratarea</a>
+                            <a href="./folosirea_acizilor.html">Folosirea Acizilor</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <form action="./makeup.html" method="get">
+                    <button id="meniu">Makeup</button>
+                        <div class="dropdown-optiuni">
+                            <a href="./baza_machiaj.html">Baza Machiaj</a>
+                            <a href="./fdt.html">Fondul de ten</a>
+                            <a href="./sprancene.html">Produse sprancene</a>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="dropdown">
+                    <form action="./lifestyle.html" method="get">
+                    <button id="meniu">Lifestyle</button>
+                        <div class="dropdown-optiuni">
+                            <a href="hidratare_corp.html">Hidratarea Corpului</a>
+                            <a href="analize.html">Analize Periodice</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <form action="./fashion.html" method="get">
+                    <button id="meniu">Fashion</button>
+                        <div class="dropdown-optiuni">
+                            <a href="./tendinte.html">Tendinte in moda</a>
+                            <a href="./designeri.html">Designeri romani</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="sterge">
+                <button onclick="RemoveFunction()" class="sterge_btn">Sterge</button>
+                </div>
+                <button onclick="myFunction()" class="dropbtn">Cauta</button>
+                <div class="dropdown1">
+                    <div id="Dropdown_id" class="dropdown-content">
+                      <input type="text" placeholder="Gaseste..." id="Search" onkeyup="filtruFunction()">
+                      <a href="./sugestii.html">Sugestii</a>
+                      <a href="./skincare.html">Skincare</a>
+                      <a href="./makeup.html">Makeup</a>
+                      <a href="./lifestyle.html">Lifestyle</a>
+                      <a href="./fashion.html">Fashion</a>
+                    </div>
+                  </div>
+
+
+        </header>
+
+        <div class="pagina">
+            <form class="formular">
+                <h3>CONTACTEAZA-NE</h3>
+                <input type="text" id="nume" placeholder="Nume">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="nr_tel" placeholder="Numar de telefon" required>
+                
+                <div class="checkbox-container">
+                <input type="checkbox" id="checkboxInput" />
+                <label for="myCheckbox">Make-up</label><br>
+                </div>
+
+                <div class="checkbox-container">
+                <input type="checkbox" id="checkboxInput2" />
+                <label for="myCheckbox2">Skincare</label><br>
+                </div>
+
+                <div class="checkbox-container">
+                <input type="checkbox" id="checkboxInput3" />
+                <label for="myCheckbox3">Lifestyle</label><br>
+                </div>
+                <br>
+
+                <div class="select-container">
+                    <label for="categorie">Alegeți categoria:</label>
+                    <select id="categorie">
+                      <option value="">-- Selectați --</option>
+                      <option value="ajutor">Ajutor</option>
+                      <option value="reclamatie">Reclamatie</option>
+                      <option value="consultatie">Consultatii</option>
+                    </select>
+                  </div>
+                <br>
+
+                <textarea id="mesaj" rows="4" placeholder="Lasa-ne mesajul tau aici!" required></textarea>
+                <button type="submit" id="submit">Trimite</button>
+
+            </form>
+            
+        </div>
+        <script type="text/javascript" src="form.js"></script>
+
+        <footer>
+            <img src="https://github.com/AlexandraMarinaBerlinschi/HTML-CSS-JAVASCRIPT/blob/main/GODDESS/Pagina%20Principala/Resources/Logo.png?raw=true" alt="logo">
+            <nav id="meniu_footer"> 
+                <ul>
+                    <li><a href="#Politica">Politica de confidentialitate</a></li>
+                    <li><a href="./form.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>  
+    </body>
+</html>
