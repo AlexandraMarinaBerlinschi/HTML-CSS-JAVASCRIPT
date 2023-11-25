@@ -47,4 +47,4 @@
 - Utilizarea metodelor din clase de baza : Math, Date, String, etc. (minim 4)
 - Consola trebuie sa fie clean ( fara erori sau logs generate de cod )
 
--Pentru fiecare implementare extra se vor acorda puncte suplimentare
+- Pentru fiecare implementare extra se vor acorda puncte suplimentare
