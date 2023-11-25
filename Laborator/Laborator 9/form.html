@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Formular pentru intrarea în Sistemul Solar</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <script type="text/javascript" src="form.js"></script>
+   </head>
+   <body>
+     <h3>FORMULAR PENTRU INTRAREA ÎN SISTEMUL SOLAR</h3>
+     <div id="container"> 
+        <form action="/action_page.php">
+            <label for="nume">Nume Complet:</label>
+            <input type="text" id="nume_complet" name="nume_complet" pattern="[A-Za-z]{3,30}$" required>
+            <br><br>
+
+            <label for="id">ID Personal:</label>
+            <input type="text" id="id" name="id" pattern="[0-9]{8,20}$" required>
+            <br><br>
+
+            <label for="rasa">Rasa:</label>
+                <select id="rasa">
+                <option value ="choose">Alegeti rasa</option>
+                <option value="autobot">Autobot</option>
+                <option value="daimons">Daimons</option>
+                <option value="experiment">Experiment</option>
+                <option value="jawa">Jawa</option>
+                </select>
+            <br><br>
+
+            <label for="data_nastere">Data nasterii:</label>
+            <input type="date" min="01-01-1800" max="05-07-2023" id="data_nastere" name="data_nastere" required>
+            <br><br>
+
+            <label for="credit">Credit social:</label>
+            <input type="range" id="credit" min="0" max="2000" value="50" class="slider" required>
+            <br><br>
+
+            <label for="imagine">Fotografie:</label>
+            <input type="file" id="imagine" name="filename" required>
+            <br><br>
+
+            <input type="checkbox" id="checkbox" name="checkbox" value="afaceri">
+            <label for="checkbox"> Afaceri</label><br>
+            <input type="checkbox" id="checkbox" name="checkbox" value="turism">
+            <label for="checkbox">Turism</label><br>
+            <button type="submit">submit</button>
+        </form>
+     </div>
+   </body>
+</html>
